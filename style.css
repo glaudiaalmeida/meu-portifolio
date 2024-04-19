@@ -1,10 +1,4 @@
-/*CSS Reset / Normalize*/
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
-
 :root{
-    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
 }
@@ -17,37 +11,76 @@ body {
     padding: 0;
     line-height: 1;
 }
-ol, ul,li {
+
+ol, ul, li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
     color: var(--cor-de-link);
 }
 
-/*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
-de utiliza-la. 
-
-Mas o que é o BEM?
-
-BEM (Block, Element, Modifier) ​​é uma abordagem baseada em componentes para o desenvolvimento
-web. A ideia por trás disso é dividir a interface do usuário em blocos independentes.
-Isso torna o desenvolvimento de interface fácil e rápido, mesmo com uma interface
-de usuário complexa, e permite a reutilização de código existente sem copiar e colar.
-
-Link da documentação oficial!
-https://en.bem.info/methodology/quick-start/*/
-
 /*Sessão Menu*/
 
-section.menu{
+.menu__top{
+    display: flex;
+    justify-content: space-between;
+    
 
+}
+
+.menu__top__left {
+   display: flex;
+   gap: 5px;
+   justify-content: center;
+}
+
+.menu__top__list {
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
 }
 
 /*Sessão Title*/
 
-section.title{
+.title__div {
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.title__container {
+    margin-top: 5%;
+    gap: 10px;
+    padding: 3%;
+}
+
+.title__bio {
+    text-align: center;
+    line-height: 3em;
+}
+
+.title__subsection {
+    margin-left: 4%;
+    line-height: 2em;
+    
+
+}
+
+.title__network {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.title__network__item {
+    margin-bottom: 1.5%;
+    font-size: 1.3em;
+    
+    
+    
 }
 
 /*Sessão About*/
